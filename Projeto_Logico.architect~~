@@ -115,21 +115,40 @@
   <table id="TAB29" populated="true" UUID="c8a9d5ce-4f58-44ed-8aa4-ccc370d4c9c2" name="pessoas" objectType="TABLE" physicalName="pessoas" >
    <remarks></remarks>
    <folder id="FOLTAB291" populated="true" name="Columns" physicalName="Columns" type="1">
-    <index id="IDX30" populated="true" UUID="50cc47f7-4ea0-4dfa-a665-995837cb081f" clustered="false" name="pk_pessoas" physicalName="pk_pessoas" primaryKeyIndex="true" unique="false" >
+    <column id="COL30" populated="true" UUID="bba0b333-0d7b-45f7-9040-3596d64b4e97" autoIncrement="false" autoIncrementSequenceName="pessoas_codigo_pessoa_seq" defaultValue="" name="codigo_pessoa" nullable="0" physicalName="codigo_pessoa" precision="0" primaryKeySeq="0" referenceCount="1" scale="0" sourceDataTypeName="UserDefinedSQLType" type="4" userDefinedTypeUUID="63b011c7-c81f-4c75-8271-632b3c87f727" >
+     <remarks></remarks>
+    </column>
+    <column id="COL31" populated="true" UUID="18fa728d-16d5-466d-8641-8123659a221e" autoIncrement="false" autoIncrementSequenceName="pessoas_nome_seq" defaultValue="" name="nome" nullable="0" physicalName="nome" precision="0" referenceCount="1" scale="0" sourceDataTypeName="UserDefinedSQLType" type="12" userDefinedTypeUUID="831ac2d4-0e65-47ec-a0b7-62b7f6b8760a" >
+     <remarks></remarks>
+    </column>
+    <column id="COL32" populated="true" UUID="059a70e8-2b8b-4308-ae1d-84bef29d31dc" autoIncrement="false" autoIncrementSequenceName="pessoas_idade_seq" defaultValue="" name="idade" nullable="1" physicalName="idade" precision="0" referenceCount="1" scale="0" sourceDataTypeName="UserDefinedSQLType" type="4" userDefinedTypeUUID="63b011c7-c81f-4c75-8271-632b3c87f727" >
+     <remarks></remarks>
+    </column>
+    <column id="COL33" populated="true" UUID="0ea59986-0bc6-458e-8c4c-c760bea299ca" autoIncrement="false" autoIncrementSequenceName="pessoas_local_nascimento_seq" defaultValue="" name="local_nascimento" nullable="1" physicalName="local_nascimento" precision="0" referenceCount="1" scale="0" sourceDataTypeName="UserDefinedSQLType" type="12" userDefinedTypeUUID="831ac2d4-0e65-47ec-a0b7-62b7f6b8760a" >
+     <remarks></remarks>
+    </column>
+    </folder>
+    <folder id="FOLTAB293" populated="true" name="Exported Keys" physicalName="Exported Keys" type="3">
+    </folder>
+    <folder id="FOLTAB292" populated="true" name="Imported Keys" physicalName="Imported Keys" type="2">
+    </folder>
+    <folder id="FOLTAB294" populated="true" name="Indices" physicalName="Indices" type="4">
+    <index id="IDX34" populated="true" UUID="50cc47f7-4ea0-4dfa-a665-995837cb081f" clustered="false" name="pk_pessoas" physicalName="pk_pessoas" primaryKeyIndex="true" unique="false" >
+     <index-column id="IDC35" populated="true" UUID="a87dd11e-bc2f-4f5d-b9ee-f2614ff5018c" ascendingOrDescending="UNSPECIFIED" column-ref="COL30" name="codigo_pessoa" physicalName="codigo_pessoa" />
     </index>
    </folder>
   </table>
-  <table id="TAB31" populated="true" UUID="8d7a3b58-c57a-4482-8132-3650e623f127" name="fatos_relevantes" objectType="TABLE" physicalName="fatos_relevantes" >
+  <table id="TAB36" populated="true" UUID="8d7a3b58-c57a-4482-8132-3650e623f127" name="fatos_relevantes" objectType="TABLE" physicalName="fatos_relevantes" >
    <remarks></remarks>
-   <folder id="FOLTAB311" populated="true" name="Columns" physicalName="Columns" type="1">
-    <index id="IDX32" populated="true" UUID="ae3d2dee-3f15-4712-a7d0-14bb2c7b8a96" clustered="false" name="pk_fatos_relvantes" physicalName="pk_fatos_relvantes" primaryKeyIndex="true" unique="false" >
+   <folder id="FOLTAB361" populated="true" name="Columns" physicalName="Columns" type="1">
+    <index id="IDX37" populated="true" UUID="ae3d2dee-3f15-4712-a7d0-14bb2c7b8a96" clustered="false" name="pk_fatos_relvantes" physicalName="pk_fatos_relvantes" primaryKeyIndex="true" unique="false" >
     </index>
    </folder>
   </table>
-  <table id="TAB33" populated="true" UUID="aedff3ae-6605-4101-bd84-286adf851946" name="mapas" objectType="TABLE" physicalName="mapas" >
+  <table id="TAB38" populated="true" UUID="aedff3ae-6605-4101-bd84-286adf851946" name="mapas" objectType="TABLE" physicalName="mapas" >
    <remarks></remarks>
-   <folder id="FOLTAB331" populated="true" name="Columns" physicalName="Columns" type="1">
-    <index id="IDX34" populated="true" UUID="c5a66c03-ba62-4864-94b0-ae56ec78dc3b" clustered="false" name="pk_mapas" physicalName="pk_mapas" primaryKeyIndex="true" unique="false" >
+   <folder id="FOLTAB381" populated="true" name="Columns" physicalName="Columns" type="1">
+    <index id="IDX39" populated="true" UUID="c5a66c03-ba62-4864-94b0-ae56ec78dc3b" clustered="false" name="pk_mapas" physicalName="pk_mapas" primaryKeyIndex="true" unique="false" >
     </index>
    </folder>
   </table>
@@ -141,14 +160,14 @@
  <create-kettle-job-settings filePath="" jobName="" schemaName="" kettleJoinType="0" savingToFile="true" />
  <play-pen zoom="1.1892071150027208" viewportX="0" viewportY="0" relationship-style="rectilinear" names-displayLogicalNames="true" showPrimaryTag="true" showForeignTag="true" showAlternateTag="true" columnVisibility="ALL" relationshipLabelVisibility="true">
   <table-pane table-ref="TAB1" x="466" y="58" bgColor="0xeeeeee" fgColor="0x000000" rounded="false" dashed="false"/>
-  <table-pane table-ref="TAB9" x="470" y="250" bgColor="0xeeeeee" fgColor="0x000000" rounded="false" dashed="false"/>
-  <table-pane table-ref="TAB17" x="584" y="461" bgColor="0xeeeeee" fgColor="0x000000" rounded="false" dashed="false"/>
+  <table-pane table-ref="TAB9" x="461" y="267" bgColor="0xeeeeee" fgColor="0x000000" rounded="false" dashed="false"/>
+  <table-pane table-ref="TAB17" x="570" y="474" bgColor="0xeeeeee" fgColor="0x000000" rounded="false" dashed="false"/>
   <table-pane table-ref="TAB19" x="256" y="308" bgColor="0xeeeeee" fgColor="0x000000" rounded="false" dashed="false"/>
   <table-pane table-ref="TAB21" x="269" y="422" bgColor="0xeeeeee" fgColor="0x000000" rounded="false" dashed="false"/>
   <table-pane table-ref="TAB23" x="73" y="27" bgColor="0xeeeeee" fgColor="0x000000" rounded="false" dashed="false"/>
-  <table-pane table-ref="TAB29" x="1050" y="95" bgColor="0xeeeeee" fgColor="0x000000" rounded="false" dashed="false"/>
-  <table-pane table-ref="TAB31" x="853" y="393" bgColor="0xeeeeee" fgColor="0x000000" rounded="false" dashed="false"/>
-  <table-pane table-ref="TAB33" x="602" y="613" bgColor="0xeeeeee" fgColor="0x000000" rounded="false" dashed="false"/>
+  <table-pane table-ref="TAB29" x="963" y="126" bgColor="0xeeeeee" fgColor="0x000000" rounded="false" dashed="false"/>
+  <table-pane table-ref="TAB36" x="853" y="393" bgColor="0xeeeeee" fgColor="0x000000" rounded="false" dashed="false"/>
+  <table-pane table-ref="TAB38" x="602" y="613" bgColor="0xeeeeee" fgColor="0x000000" rounded="false" dashed="false"/>
  </play-pen>
  <critic-manager>
   <critic-grouping platformType="Generic" enabled="true">
