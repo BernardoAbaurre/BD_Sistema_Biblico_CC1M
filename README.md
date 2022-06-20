@@ -29,3 +29,10 @@ Este projeto, foi necessário usar a 1º Forma normal até a 3º Forma Normal, e
 `Posto isso, porque nós fazemos todo este trabalho por simples dados repetidos, não seria melhor deixar eles sem essas formas normais?`
 
 Essa resposta dependeria para qual o tamanho da organização: se for para uma grande empresa com centenas de milhares de informações onde existe outras milhares de dados que seriam a mesma coisa, a forma normal seria uma altenativa para uma maior eficiêcia dos dados neste tipo de caso, já pequenas empresa como botecos, bares, mercadinhos do seu José e entre outros o recomendado seria fazer um banco de dados mais simples, pois, eles não necessitam de complexas consulta com 300 métodos para fazer um super bancos de dados e sim o foco deles é a rapidez com que se faz uma consulta no banco de dados além de possuir poucos cetenas de dados armazenados.
+
+### Entregáveis:
+[Projeto Lógico no formato do SQL Power Architect](Projeto_Logico.architect~)
+
+[Projeto Lógico em PDF](Projeto_Logico.pdf)
+
+[Script SQL que fará a implementação do modelo lógico no PostgreSQL](Script_sistema_biblico.sql)
