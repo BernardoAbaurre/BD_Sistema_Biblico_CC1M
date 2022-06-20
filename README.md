@@ -37,5 +37,5 @@ Seria a 3º Forma Normal o qual este trabalho foi feito.
 
 Tanta discussão sobre forma normal aqui e para lá , qual a maior forma normal possível?
 
-Teoricamente seria a 5º Forma Normal , mas como um projeto desta maguinetude seria estremamente complexo e muito dificil , para se ter uma ideia usando este trabalho
+Teoricamente seria a 5º Forma Normal , mas como um projeto desta maguinetude seria estremamente complexo e muito dificil ao ponto de ser por acaso tiver um projeto deste tipo eu deixaria para as próximas gerações para terminar, bricadeiras a parte, mas realmente para cada passo mais fundo em Forma Normais o tempo e esforço para fazer é quase uma função exponecial de tanto que é trabalhoso.
 
