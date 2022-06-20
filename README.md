@@ -17,6 +17,7 @@ O objetivo deste trabalho é treinar a aplicação de regras de normalização e
 
 ### *Obervação: O sistema deste trabalho esta em Postgres, ou seja, não funcionará em outros SQLs .*
 
+### Projeto usado no trabalho:
 ![Projeto Conceitual - "Bíblico"](https://github.com/BernardoAbaurre/BD_Sistema_Biblico_CC1M/blob/main/Arquivos_recebidos/Projeto_Conceitual.png)
 
 ### Projeto Lógico / Script:
