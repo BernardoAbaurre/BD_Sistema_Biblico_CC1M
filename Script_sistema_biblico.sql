@@ -3,132 +3,132 @@ use sistema_biblico; -- usar BD
 
 -- criar tabelas
 CREATE TABLE professias (
-                codigo_profecia INT NOT NULL,
-                nome VARCHAR(30) NOT NULL,
-                descricao TEXT NOT NULL,
+                codigo_profecia INT         NOT NULL,
+                nome            VARCHAR(30) NOT NULL,
+                descricao       TEXT        NOT NULL,
                 PRIMARY KEY (codigo_profecia)
 );
 
 
 CREATE TABLE mapas (
-                codigo_mapa INT NOT NULL,
-                nome VARCHAR(30) NOT NULL,
-                regiao VARCHAR(30) NOT NULL,
-                relevo VARCHAR(30) NOT NULL,
-                vegetacao VARCHAR(30) NOT NULL,
-                temperatura_media SMALLINT NOT NULL,
-                temperatura_maxima SMALLINT NOT NULL,
-                temperatura_minima SMALLINT NOT NULL,
+                codigo_mapa        INT         NOT NULL,
+                nome               VARCHAR(30) NOT NULL,
+                regiao             VARCHAR(30) NOT NULL,
+                relevo             VARCHAR(30) NOT NULL,
+                vegetacao          VARCHAR(30) NOT NULL,
+                temperatura_media  SMALLINT    NOT NULL,
+                temperatura_maxima SMALLINT    NOT NULL,
+                temperatura_minima SMALLINT    NOT NULL,
                 PRIMARY KEY (codigo_mapa)
 );
 
 
 CREATE TABLE fatos_relevantes (
-                codigo_fato INT NOT NULL,
-                nome VARCHAR(30) NOT NULL,
-                descricao TEXT NOT NULL,
+                codigo_fato INT         NOT NULL,
+                nome        VARCHAR(30) NOT NULL,
+                descricao   TEXT        NOT NULL,
                 PRIMARY KEY (codigo_fato)
 );
 
 
 CREATE TABLE pessoas (
-                codigo_pessoa INT NOT NULL,
-                nome VARCHAR(30) NOT NULL,
-                idade INT,
+                codigo_pessoa    INT         NOT NULL,
+                nome             VARCHAR(30) NOT NULL,
+                idade            INT,
                 local_nascimento VARCHAR(30),
                 PRIMARY KEY (codigo_pessoa)
 );
 
 
 CREATE TABLE ascendem (
-                codigo_pessoa_ascendente INT NOT NULL,
+                codigo_pessoa_ascendente  INT NOT NULL,
                 codigo_pessoa_descendente INT NOT NULL,
                 PRIMARY KEY (codigo_pessoa_ascendente, codigo_pessoa_descendente)
 );
 
 
 CREATE TABLE f_envolvem_p (
-                codigo_fato INT NOT NULL,
+                codigo_fato   INT NOT NULL,
                 codigo_pessoa INT NOT NULL,
                 PRIMARY KEY (codigo_fato, codigo_pessoa)
 );
 
 
 CREATE TABLE local_onde_habitou (
-                codigo_local INT NOT NULL,
-                codigo_pessoa INT NOT NULL,
-                nome_local VARCHAR(30) NOT NULL,
+                codigo_local  INT         NOT NULL,
+                codigo_pessoa INT         NOT NULL,
+                nome_local    VARCHAR(30) NOT NULL,
                 PRIMARY KEY (codigo_local, codigo_pessoa)
 );
 
 
 CREATE TABLE datas_relevantes (
                 codigo_data INT NOT NULL,
-                dia INT,
-                mes INT,
-                ano INT,
-                tempo VARCHAR(2),
+                dia         INT,
+                mes         INT,
+                ano         INT,
+                tempo       VARCHAR(2),
                 PRIMARY KEY (codigo_data)
 );
 
 
 CREATE TABLE ocorrem_em (
                 codigo_profecia INT NOT NULL,
-                codigo_data INT NOT NULL,
+                codigo_data     INT NOT NULL,
                 PRIMARY KEY (codigo_profecia, codigo_data)
 );
 
 
 CREATE TABLE livros (
-                codigo_livro INT NOT NULL,
-                nome VARCHAR(30) NOT NULL,
-                quantidade_capitulos INT NOT NULL,
-                epoca VARCHAR(30) NOT NULL,
-                abreviatura VARCHAR(30) NOT NULL,
+                codigo_livro         INT         NOT NULL,
+                nome                 VARCHAR(30) NOT NULL,
+                quantidade_capitulos INT         NOT NULL,
+                epoca                VARCHAR(30) NOT NULL,
+                abreviatura          VARCHAR(30) NOT NULL,
                 PRIMARY KEY (codigo_livro)
 );
 
 
 CREATE TABLE planos_de_leitura (
-                codigo_plano INT NOT NULL,
-                objetivo TEXT NOT NULL,
-                duracao TIME NOT NULL,
-                codigo_livro INT NOT NULL,
+                codigo_plano INT  NOT NULL,
+                objetivo     TEXT NOT NULL,
+                duracao      TIME NOT NULL,
+                codigo_livro INT  NOT NULL,
                 PRIMARY KEY (codigo_plano)
 );
 
 
 CREATE TABLE escrevem (
                 codigo_pessoa INT NOT NULL,
-                codigo_livro INT NOT NULL,
+                codigo_livro  INT NOT NULL,
                 PRIMARY KEY (codigo_pessoa, codigo_livro)
 );
 
 
 CREATE TABLE capitulos (
-                codigo_capitulo INT NOT NULL,
-                nome VARCHAR(30) NOT NULL,
-                quantidade_versiculos INT NOT NULL,
-                categoria VARCHAR(30) NOT NULL,
-                reflexao TEXT NOT NULL,
-                codigo_livro INT NOT NULL,
+                codigo_capitulo       INT         NOT NULL,
+                nome                  VARCHAR(30) NOT NULL,
+                quantidade_versiculos INT         NOT NULL,
+                categoria             VARCHAR(30) NOT NULL,
+                reflexao              TEXT        NOT NULL,
+                codigo_livro          INT         NOT NULL,
                 PRIMARY KEY (codigo_capitulo)
 );
 
 
 CREATE TABLE versiculos (
-                codigo_versiculo INT NOT NULL,
-                nome VARCHAR(30) NOT NULL,
-                texto TEXT NOT NULL,
-                objetivo TEXT NOT NULL,
-                reflexao TEXT NOT NULL,
-                codigo_capitulo INT NOT NULL,
+                codigo_versiculo INT         NOT NULL,
+                nome             VARCHAR(30) NOT NULL,
+                texto            TEXT        NOT NULL,
+                objetivo         TEXT        NOT NULL,
+                reflexao         TEXT        NOT NULL,
+                codigo_capitulo  INT         NOT NULL,
                 PRIMARY KEY (codigo_versiculo)
 );
 
 
 CREATE TABLE orientam (
-                codigo_data INT NOT NULL,
+                codigo_data      INT NOT NULL,
                 codigo_versiculo INT NOT NULL,
                 PRIMARY KEY (codigo_data, codigo_versiculo)
 );
@@ -136,13 +136,13 @@ CREATE TABLE orientam (
 
 CREATE TABLE possuem (
                 codigo_versiculo INT NOT NULL,
-                codigo_fato INT NOT NULL,
+                codigo_fato      INT NOT NULL,
                 PRIMARY KEY (codigo_versiculo, codigo_fato)
 );
 
 
 CREATE TABLE aparecem (
-                codigo_profecia INT NOT NULL,
+                codigo_profecia  INT NOT NULL,
                 codigo_versiculo INT NOT NULL,
                 PRIMARY KEY (codigo_profecia, codigo_versiculo)
 );
@@ -150,7 +150,7 @@ CREATE TABLE aparecem (
 
 CREATE TABLE v_envolvem_m (
                 codigo_versiculo INT NOT NULL,
-                codigo_mapa INT NOT NULL,
+                codigo_mapa      INT NOT NULL,
                 PRIMARY KEY (codigo_versiculo, codigo_mapa)
 );
 
@@ -279,7 +279,3 @@ ON UPDATE NO ACTION;
 -- regras de integridade
 alter table datas_relevantes
 add constraint CHK_tempo check (tempo = 'AC' or tempo = 'DC');
-
-
-
-
