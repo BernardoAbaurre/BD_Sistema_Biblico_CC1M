@@ -19,4 +19,5 @@ O objetivo deste trabalho é treinar a aplicação de regras de normalização e
 
 ![Projeto Conceitual - "Bíblico"](https://github.com/BernardoAbaurre/BD_Sistema_Biblico_CC1M/blob/main/Arquivos_recebidos/Projeto_Conceitual.png)
 
+### Projeto Lógico / Script:
 
