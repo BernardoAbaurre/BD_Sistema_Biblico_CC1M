@@ -31,5 +31,11 @@ Posto isso , porque nós fazemos todo este trabalho por simples dados repetidos 
 
 Essa resposta dependeria para qual o tamanho da organização : se for para uma grande empresa com centenas de milhares de informações onde existe outras milhares de dados que seriam a mesma coisa, a forma normal seria uma altenativa para uma maior eficiêcia dos dados neste tipo de caso, já pequenas empresa como botecos, bares, mercadinhos do seu José e entre outros o recomendado seria fazer um banco de dados mais simples , pois, eles não necessitam de complexas consulta com 300 métodos para fazer um super bancos de dados e sim o foco deles é a rapidez com que se faz uma consulta no banco de dados além de possuir poucos cetenas de dados armazenados.
 
+Então depois de toda essa conversa ... qual seria a menor Forma normal comerciável ?
 
+Seria a 3º Forma Normal o qual este trabalho foi feito.
+
+Tanta discussão sobre forma normal aqui e para lá , qual a maior forma normal possível?
+
+Teoricamente seria a 5º Forma Normal , mas como um projeto desta maguinetude seria estremamente complexo e muito dificil , para se ter uma ideia usando este trabalho
 
