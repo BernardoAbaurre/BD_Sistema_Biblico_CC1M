@@ -25,5 +25,5 @@ A imagem em baixo é o projeto que foi usado para desenvolver o trabalho.
 A figura abaixo mostra o projeto lógico desenvolvido por nosso grupo. Para implementá-lo no PostgreSQL.
 ![Projeto Lógico - "Bíblico"](ProjetoLogico_PowerArchitect.png)
 
-**Andamento do projeto:** Este projeto para faze-lo foi necessário usar a 1º Forma normal até a 3º Forma Normal, essa forma normal seria como um método para deixar o sistema com consistência de dados.  
+**Andamento do projeto:** Este projeto para faze-lo foi necessário usar a 1º Forma normal até a 3º Forma Normal, essa forma normal seria como um método para deixar o sistema com consistência de dados , ou seja , menos chance de repetir o dado com isso o custo seria de deixar o trabalho mais complexo e cada vez maior .  
 
