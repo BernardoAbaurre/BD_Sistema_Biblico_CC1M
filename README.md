@@ -24,3 +24,5 @@ A imagem em baixo é o projeto que foi usado para desenvolver o trabalho.
 ### Projeto Lógico / Script:
 A figura abaixo mostra o projeto lógico desenvolvido por nosso grupo. Para implementá-lo no PostgreSQL.
 ![Projeto Lógico - "Bíblico"](ProjetoLogico_PowerArchitect.png)
+
+Este prrojeto para faze-lo foi necessário usar a 1º Forma normal até a 3º Forma Normal.
