@@ -20,4 +20,4 @@ O objetivo deste trabalho é treinar a aplicação de regras de normalização e
 ![Projeto Conceitual - "Bíblico"](https://github.com/BernardoAbaurre/BD_Sistema_Biblico_CC1M/blob/main/Arquivos_recebidos/Projeto_Conceitual.png)
 
 ### Projeto Lógico / Script:
-
+A figura abaixo mostra o projeto lógico desenvolvido por nosso grupo. Para implementá-lo no PostgreSQL.
