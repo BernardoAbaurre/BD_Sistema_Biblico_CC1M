@@ -14,3 +14,7 @@
 ---
 ## Introdução
 O objetivo deste trabalho é treinar a aplicação de regras de normalização e boas práticas de modelagem de bancos de dados, durante a elaboração de um projeto lógico a partir de um projeto conceitual previamente definido. O projeto com qual o nosso grupo ficou foi o de sistema bíblico. Além do mais, foi necessário criar um script em um Sistema de Gerenciamento de Banco de Dados (SGBD) desse projeto lógico.
+
+![Projeto Conceitual - "Bíblico"](https://github.com/BernardoAbaurre/BD_Sistema_Biblico_CC1M/blob/main/Arquivos_recebidos/Projeto_Conceitual.png)
+
+
