@@ -23,3 +23,4 @@ A imagem em baixo é o projeto que foi usado para desenvolver o trabalho.
 
 ### Projeto Lógico / Script:
 A figura abaixo mostra o projeto lógico desenvolvido por nosso grupo. Para implementá-lo no PostgreSQL.
+![Projeto Lógico - "Bíblico"](url falta uma imagem plz mandem ela
